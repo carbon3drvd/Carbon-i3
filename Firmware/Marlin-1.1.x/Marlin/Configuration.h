@@ -912,7 +912,7 @@
 #define Y_MAX_POS Y_BED_SIZE
 //#define X_MAX_POS (X_BED_SIZE  + 10)                                                                              // BRUNO (02/03/2019)
 //#define Y_MAX_POS (Y_BED_SIZE  + 10)                                                                              // BRUNO (02/03/2019)
-#define Z_MAX_POS 190
+#define Z_MAX_POS 195
 
 /**
  * Software Endstops
