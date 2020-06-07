@@ -1,5 +1,3 @@
-//Carbon i3 Modified
-
 // PRUSA iteration3
 // Y belt holder
 // GNU GPL v3
@@ -10,8 +8,8 @@
 module main_body()
 {
 translate([-1, -1, -1 ]) cube([ 30, 27, 15 ]);
-translate([-10, 16, -1 ]) cube([ 53, 15, 15 ]);
-translate([-10, 23, -1 ]) cube([ 53, 8, 15 ]);
+translate([-10, 16, -1 ]) cube([ 50.5, 10, 15 ]);
+translate([-10, 23, -1 ]) cube([ 52, 3, 15 ]);
 }
 
 module belt_holders()
@@ -26,22 +24,21 @@ module belt_holders()
 
 module screws()
 {
-    translate( [ -2.5 , 33 , 7.5 ] ) rotate([90,0,0]) cylinder( h = 15, r = 1.6, $fn=30);  //screw hole
-    translate( [ -5.5 , 33 , 7.5 ] ) rotate([90,0,0]) cylinder( h = 15, r = 1.6, $fn=30);  //screw hole
-    translate( [ -2.5, 24-2 , 7.5 ] ) rotate([90,0,0]) cylinder( h = 9-2, r = 3, $fn=30);  //screw hole - head
-    translate( [ -5.5 , 24-2 , 7.5 ] ) rotate([90,0,0]) cylinder( h = 9, r = 3, $fn=30);  //screw hole - head
+    translate( [ -2.5 , 28 , 7.5 ] ) rotate([90,0,0]) cylinder( h = 10, r = 1.6, $fn=30);  //screw hole
+    translate( [ -5.5 , 28 , 7.5 ] ) rotate([90,0,0]) cylinder( h = 10, r = 1.6, $fn=30);  //screw hole
+    translate( [ -2.5, 22 , 7.5 ] ) rotate([90,0,0]) cylinder( h = 7, r = 3, $fn=30);  //screw hole - head
+    translate( [ -5.5 , 22 , 7.5 ] ) rotate([90,0,0]) cylinder( h = 10, r = 3, $fn=30);  //screw hole - head
     
-    translate( [ 35.5 , 33 , 7.5 ] ) rotate([90,0,0]) cylinder( h = 15, r = 1.6, $fn=30);  //screw hole
-    translate( [ 38.5 , 33 , 7.5 ] ) rotate([90,0,0]) cylinder( h = 15, r = 1.6, $fn=30);  //screw hole
+    translate( [ 35.5 , 28 , 7.5 ] ) rotate([90,0,0]) cylinder( h = 10, r = 1.6, $fn=30);  //screw hole
+    translate( [ 38.5 , 28 , 7.5 ] ) rotate([90,0,0]) cylinder( h = 10, r = 1.6, $fn=30);  //screw hole
+    translate( [ 35.5 , 22 , 7.5 ] ) rotate([90,0,0]) cylinder( h = 10, r = 3, $fn=30);  //screw hole - head
+    translate( [ 38.5 , 22 , 7.5 ] ) rotate([90,0,0]) cylinder( h = 10, r = 3, $fn=30);  //screw hole - head
     
-    translate( [ 35.5 , 24-2 , 7.5 ] ) rotate([90,0,0]) cylinder( h = 9, r = 3);  //screw hole - head
-    translate( [ 38.5 , 24-2 , 7.5 ] ) rotate([90,0,0]) cylinder( h = 9, r = 3);  //screw hole - head
+    translate([-5.5, 21, 5.9 ]) cube([ 3, 6, 3.2 ]);
+    translate([35.5, 21, 5.9 ]) cube([ 3, 6, 3.2 ]);
     
-    translate([-5.5, 21, 5.9 ]) cube([ 3, 11, 3.2 ]);
-    translate([35.5, 21, 5.9 ]) cube([ 3, 11, 3.2 ]);
-    
-    translate([-5.5, 15-2, 4.5 ]) cube([ 3, 9, 6 ]);
-    translate([35.5, 15-2, 4.5 ]) cube([ 3, 9, 6 ]);
+    translate([-5.5, 15, 4.5 ]) cube([ 3, 7, 6 ]);
+    translate([35.5, 15, 4.5 ]) cube([ 6, 7, 6 ]);
 }
 
 belt_holders();

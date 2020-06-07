@@ -1,5 +1,3 @@
-//Carbon i3 Modified
-
 // PRUSA iteration3
 // Y frame corners
 // GNU GPL v3
@@ -31,16 +29,13 @@ module corner_holes(){
   translate([-5,6,41])  cube([30,3.5,2]);
   
   // LM8UU keepout
-  //difference(){
-    //translate([11,12.5,46]) rotate([0,90,90]) cylinder(h = 270, r=8, //$fn=30);
-    //translate([21,12.5,62]) rotate([0,90,90]) cube([20,20,30]);
-  //} 
-   //translate([21,12.5,62-0.2]) rotate([0,90,90]) cube([20,20,0.2]);
-   //translate([21,12.5,42]) rotate([0,90,90]) cube([0.2,20,30]);
-   translate([21,12.5,56-0.2]) rotate([0,90,90]) cube([20,20,0.2]);
-   translate([21,12.5,36]) rotate([0,90,90]) cube([0.2,20,30]);
-  
-  //translate([21,12.5,56-0.2]) rotate([0,90,90]) cube([20,20,10.2]); // to supress the suport     
+  difference(){
+    translate([11,12.5,46]) rotate([0,90,90]) cylinder(h = 270, r=8, $fn=30);
+    translate([21,12.5,62]) rotate([0,90,90]) cube([20,20,30]);
+  } 
+   translate([21,12.5,62-0.2]) rotate([0,90,90]) cube([20,20,0.2]);
+   translate([21,12.5,42]) rotate([0,90,90]) cube([0.2,20,20]);
+     
  }
 }
 
@@ -67,4 +62,4 @@ module corner(){
  }
 }
 
-rotate([180,180,0]) corner();
+rotate([90,0,0]) corner();
